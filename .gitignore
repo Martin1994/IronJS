@@ -28,3 +28,5 @@ Package/IronJS.snk
 *.exe
 *.orig
 *.docstates
+.vs
+Properties

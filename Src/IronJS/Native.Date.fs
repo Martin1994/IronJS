@@ -31,7 +31,7 @@ module Date =
   let private invalidDate = 
     DateTime.MinValue
 
-  let private parseDate input culture (result:DT byref) : bool =   
+  let private parseDate (input: string) culture (result:DT byref) : bool =   
     let none = DateTimeStyles.None 
 
     if DateTime.TryParse(input, culture, none, &result) |> not then
